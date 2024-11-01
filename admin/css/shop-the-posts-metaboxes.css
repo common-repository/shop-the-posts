@@ -1,0 +1,31 @@
+.codeless_stp_metabox_field[data-required]{
+	display:none;
+}
+
+.codeless_stp_metabox_field[data-required].cl-show-field{
+	display:flex;
+}
+
+.codeless_stp_metabox_field{
+	display:flex;
+	margin-top:15px;
+}
+
+.codeless_stp_metabox_field_label{
+	width:25%;
+	vertical-align: top;
+    float: left;
+    font-weight:600;
+}
+.codeless_stp_metabox_field_input{
+    vertical-align: top;
+    float: left;
+}
+
+.codeless_stp_metabox_field_input input, .codeless_stp_metabox_field_input select{
+	min-width:300px;
+}
+
+.codeless_stp_metabox_field .custom-img-container{
+	max-width:100px;
+}

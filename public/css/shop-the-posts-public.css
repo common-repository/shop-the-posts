@@ -1,0 +1,92 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* Loop Bottom Content Style */
+/* ----------------------------------------- */
+.share-the-posts-content{
+	background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+    padding: 40px 30px 30px 20px;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    transform: translateY(10px);    
+     box-shadow: 0px -30px 60px -30px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px -30px 60px -30px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px -30px 60px -30px rgba(0, 0, 0, 0.15);
+}
+
+.share-the-posts-content-wrapper{
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.share-the-posts-content.visible{
+	opacity:1;
+	visibility:visible;
+	transform: translateY(0px);  
+}
+
+.share-the-posts-content-image-link{
+	box-shadow:none !important;
+}
+
+.share-the-posts-link a{
+	float:right;
+}
+
+/* ----------------------------------------- */
+/* End Loop Bottom Content Style */
+
+
+/* Start Single Post Sticky */
+/* ----------------------------------------- */
+
+.share-the-posts-single-sticky{
+	position:fixed;
+	bottom:40px;
+	left:40px;
+}
+.share-the-posts-single-sticky-wrapper{
+	max-width:150px;
+}
+.share-the-posts-single-sticky img{
+	max-width:100px;
+	display:block;
+	text-align:center;
+	margin:0 auto;
+}
+
+.share-the-posts-single-sticky-wrapper a{
+	display:block;
+	width:100%;
+	text-align:center;
+}
+
+.share-the-posts-single-sticky-title{
+	margin-top:10px;
+	display:block;
+}
+
+/* ----------------------------------------- */
+/* End Single Post Sticky */
+
+
+body:not(.single-post) article.post{
+	position:relative;
+}
+
+body.single-post #content{
+	position:relative;
+}
+
